@@ -9,11 +9,17 @@ inputs:
     description: 'label name input'
     required: true
     default: 'LargePR'
+  Comments:
+    description: 'comment'
+    required: true
+    default: 'The PR should have less than 10 commits'
 outputs:
   CommitsCounts: # id of output
     description: 'The time we greeted you'
   labelname:
     description: 'label name'
+  comments:
+    description: 'commants description'
 runs:
   using: 'node12'
   main: 'index.js'
