@@ -6,7 +6,7 @@ inputs:
     required: true
     default: '4'
 outputs:
-  CommitCount: # id of output
+  Commit-Count: # id of output
     description: 'The time we greeted you'
 runs:
   using: 'node12'
