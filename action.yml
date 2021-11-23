@@ -1,0 +1,13 @@
+name: 'test commits'
+description: 'test commits '
+inputs:
+  commit-count:  # id of input
+    description: 'commit input'
+    required: true
+    default: '4'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node12'
+  main: 'index.js'
