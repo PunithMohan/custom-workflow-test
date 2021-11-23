@@ -5,7 +5,7 @@ try {
   // `who-to-greet` input defined in action metadata file
   const commitCount = core.getInput('commit-count');
   console.log(`Commit Count ${commitCount}!`);
-  const Commits-Counts = 4;
+  var Commits-Counts = 4;
   core.setOutput("Commits-Counts", Commits-Counts);
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
