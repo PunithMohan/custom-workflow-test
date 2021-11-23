@@ -5,9 +5,15 @@ inputs:
     description: 'commit input'
     required: true
     default: '4'
+  LabelName:
+    description: 'label name input'
+    required: true
+    default: 'LargePR'
 outputs:
   CommitsCounts: # id of output
     description: 'The time we greeted you'
+  labelname:
+    description: 'label name'
 runs:
   using: 'node12'
   main: 'index.js'
