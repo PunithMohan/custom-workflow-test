@@ -8,8 +8,6 @@ inputs:
 outputs:
   Commits-Counts: # id of output
     description: 'The time we greeted you'
-    required: true
-    default: '4'
 runs:
   using: 'node12'
   main: 'index.js'
