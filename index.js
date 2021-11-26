@@ -5,6 +5,15 @@ try {
   // `who-to-greet` input defined in action metadata file
   const commitCount = core.getInput('commit-count');
   console.log(`Commit Count ${commitCount}!`);
+  
+  //get input label name
+  const LabelName1 = core.getInput('LabelName');
+  console.log(`LabelName ${LabelName1}!`);
+  
+  //get input label name
+  const Comments1 = core.getInput('Comments');
+  console.log(`Comments1 ${Comments1}!`);
+  
   var CommitsCounts = commitCount;
   core.setOutput("CommitsCounts", CommitsCounts);
   const labelName = core.getInput('LabelName');
